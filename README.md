@@ -1,7 +1,7 @@
 # ESC190-Seam-Carving-assignment-2
 Using dynamic programming to apply seam-carving to images without losing important data in the image. Credits go to ESC180, instructor Michael Guerzhoy, and functions not described here are pre-written by Michael Guerzhoy
 
-seamcarving.c implements all the functions in seamcarving.h. c_img.h and c_img.c are written by Michael Guerzhoy and provided in the assignment.
+seamcarving.c implements all the functions in seamcarving.h. c_img.h and c_img.c are written by Michael Guerzhoy and provided in the assignment. Bin files are uploaded to the same file as seamcarving.c, and used to output images, which can be converted into other file types using https://constructor-s.github.io/esc190_bin_image/ (credits to Bill Shi).  
 
 # Assignment description
 Seam-carving is a content-aware image resizing technique where the image is reduced in size by one pixel of width (or height) at a time. A vertical seam in an image is a path of pixels connected from the top to the bottom with one pixel in each row; a horizontal seam is a path of pixels connected from the left to the right with one pixel in each column. Below left is the original 505-by-287 pixel image; below right is the result after removing 150 vertical seams, resulting in a 30% narrower image. Unlike standard content-agnostic resizing techniques (such as cropping and scaling), seam carving preserves the most interest features (aspect ratio, set of objects present, etc.) of the image. Although the underlying algorithm is simple and elegant, it was not discovered until 2007. Now, it is now a core feature in Adobe Photoshop and other computer graphics applications.
